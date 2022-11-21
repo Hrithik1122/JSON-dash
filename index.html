@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Filter Dashboard</title>
+
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel='stylesheet' href='https://rawgit.com/FortAwesome/Font-Awesome/master/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/search.css">
+</head>
+
+<body>
+
+  <div class="header">
+    <a href="#default" class="logo">Get Supermind</a>
+      <div class="header-right">
+        <a href="#"><i class="fa fa-fw fa-user"></i>Hrithik Bansal</a>
+      </div>
+  </div>
+<br>
+
+  <form class="form-inline">
+  <label for="Name">Name</label>
+  <input type="text" name="Name" id="myInput" onkeyup="setFilter(this, 0)" class="" placeholder="Search...">
+
+  <label for="Email">Email</label>
+  <input type="text" name="Email" id="myInput" onkeyup="setFilter(this, 1)" class="" placeholder="Search...">
+
+  <label for="Gender">Gender</label>
+  <input type="text" name="Gender" id="myInput" onkeyup="setFilter(this, 2)" class="" placeholder="Search...">
+  
+  <label for="search-field">City</label>
+  <input type="text" name="City" id="myInput" onkeyup="setFilter(this, 3)" class="" placeholder="Search...">
+
+  <label for="search-field">Subscription</label>
+  <input type="text" name="Subscription" id="myInput" onkeyup="setFilter(this, 4)" class="" placeholder="Search...">
+</form>
+<!-- partial:index.partial.html -->
+
+<!-- Loading Bar Before showing data -->
+  <div class="preload"></div>
+  <div class="content">
+
+
+
+<!-- Table Colums -->
+  <div id="DataTable">
+  <div id="table_box"></div>
+  <hr>
+
+<!-- Table Data fetch using JQuery API from Main.js -->
+  <table id="myTable">
+    <tbody class="scroll-pane" id="users"> </tbody>
+  </table>
+
+  </div>
+
+
+  <!-- FOOTER  START-->
+  <footer>
+  <p>Made With ❤️ 
+  <a href="https://github.com/Hrithik1122">Hrithik Bansal</a></p>
+  </footer>
+  <!-- FOOTER END -->
+
+  </div>
+<!-- End Loading Bar -->
+
+<!-- Script File -->
+  <script  src="script/script.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+  <script src="script/filter.js"></script>
+  <script src="script/main.js"></script>
+
+</body>
+</html>
