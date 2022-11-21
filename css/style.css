@@ -50,7 +50,7 @@ tr:nth-of-type(odd) {
     and (max-device-width: 1024px)  {
 
       table {
-        margin-top: 106px;
+        margin-top: 50px;
       }
 		/* Force table to not be like tables anymore */
 		table, thead, tbody, th, td, tr {
